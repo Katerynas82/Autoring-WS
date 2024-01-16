@@ -1,0 +1,119 @@
+/*styles.css */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ header, footer, main, section, article {
+    padding: 5px;
+ }
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+body {
+    background-color:beige;
+    color:rgb(173, 59, 59);
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+header {
+    outline: red solid 1px;
+    display: flex;
+    justify-content:space-between;
+ }
+
+ .branding {
+    outline: red solid 1px;
+ }
+
+ nav {
+    outline: red solid 2px;
+    text-align: center;
+    width:70%;
+ }
+
+#container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+
+
+   
+footer {
+    text-align: center;
+    background-color:rgb(173, 59, 59);
+    color:beige;
+    height: 50px;
+}
+   
+.navList {
+   display: flex;
+   flex-direction: row;
+   list-style: none; 
+   gap: 10px;
+}
+
+.navList li {
+    outline: solid 1px;
+    flex:1;
+   
+   
+}
+
+.navList a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+section article {
+    border: solid maroon 1px;
+    flex: 1; 
+}
+
+@media  (max-width: 800px) {
+    header {
+        flex-flow: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #container {
+        width: 90%;
+    }
+
+}
+
+@media  (max-width: 500px) {
+    .navList, section {
+        flex-direction: column;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+}
